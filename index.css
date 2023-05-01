@@ -30,7 +30,7 @@ body {
     font: normal normal bold 20px/25px Montserrat;
     font-family: "Montserrat", sans-serif;
     letter-spacing: 0px;
-    color: aqua;
+    color: rgb(239, 189, 24);
     text-transform: capitalize;
 }
 .emp-payroll {
@@ -59,7 +59,7 @@ body {
 .form-head {
     font: normal normal bold 24px/37px Roboto;
     letter-spacing: 0px;
-    color: aqua;
+    color: rgb(124, 170, 230);
     text-transform: capitalize;
     opacity: 1;
     padding-bottom: 20px;
@@ -80,7 +80,7 @@ label {
 }
 .text {
     font-size: 16px;
-    color: aquamarine;
+    color: rgb(117, 58, 128);
     opacity: 1;
     font-family: Roboto;
 }
@@ -90,4 +90,18 @@ label {
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
+}
+.profile-radio-content {
+    display: flex;
+    flex-direction: row;
+}
+.profile-radio-content > label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.profile {
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 12px;
 }
