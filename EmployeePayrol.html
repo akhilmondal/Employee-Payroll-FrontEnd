@@ -10,16 +10,16 @@
 </head>
 <body>
     <!--UC 1 Ability to create an Employee Payroll System UI -->
-    <header class="header-content header">
+    <header class="header-content">
         <div class="logo-content">
             <img src="./assets/images/logo.png">
-            <div>
-                <span class="emp-text">EMPLOYEE</span>
-                <span class="emp-text">PAYROLL</span>
-            </div>
+        </div>
+        <div>
+            <span class="emp-text">EMPLOYEE</span>
+            <span class="emp-text">PAYROLL</span>
         </div>
     </header>
-    <!--UC2 Payroll Form in html-->
+    <!--UC2 Payroll Form in html and css-->
     <div class="form-content">
         <form class="form" action="#" onsubmit="save();return false">
             <div class="form-head">Employee Payroll Form</div>
@@ -97,9 +97,18 @@
             <div class="row-content">
                 <label class="label text" for="salary">Choose your salary: </label>
                 <input class="input" type="range" name="salary" id="salary" min="300000" max="900000" step="100" value="500000">
-                <output class="salary-output text" for="salary">500000</output>
+                <output class="salary-output-text" for="salary">500000</output>
             </div>
         </form>
+        <script>
+            const salary = document.querySelector('#salary');
+            const output = document.querySelector('.salary-output-text');
+            output.textContent = salary.value;
+            salary.addEventListener('input', function(){
+                output.textContent = salary.value;
+            });
+        </script>
     </div>
+    
 </body>
 </html>
