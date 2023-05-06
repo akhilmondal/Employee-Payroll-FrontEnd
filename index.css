@@ -137,10 +137,12 @@ label {
     background-color: #f5f5f5;
     margin-right: 20px;
 }
+
 .cancelButton {
     text-decoration: none;
     text-align: center;
 }
+
 .submit-reset {
     width: 100%;
     display: flex;
@@ -149,9 +151,11 @@ label {
     justify-content: space-between;
     margin-bottom: 20px;
 }
+
 .submitButtom {
     margin: 0;
 }
+
 .buttonParent {
     flex-direction: row;
     align-items: flex-start;
