@@ -26,3 +26,4 @@ function insertNewRecord(data){
     var cell5 = newRow.insertCell(4);
     cell5.innerHTML = `<button onClick= 'onEdit(this)'>Edit</button><button onClick= 'onDelete(this)'>Delete</button>`
  }
+
